@@ -1,0 +1,230 @@
+/* #239bff */
+
+/* #008cff */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.bold{
+    font-weight: bold;
+}
+
+body{
+    background-image: url(img/fond.png);
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 60px;
+    margin: 9px 0;
+}
+
+h2{
+    font-size: 30px;
+    margin: 9px 0;
+    color: #008cff;
+}
+
+h3, h4 {
+    margin: 9px 0;
+}
+
+h3{
+    padding-top: 9px;
+    font-size: 25px;
+}
+h4{
+    color: #008cff;
+}
+
+li{
+    margin-left: 40px;
+}
+
+.ds{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ds .logo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 15px;
+}
+
+.ds .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ds .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ds .tete{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.ds .freelance{
+    position: absolute;
+    width: 107px;
+    left: 132px;
+    transform: rotate(337deg);
+    top: 146px;
+}
+
+.ds img{
+    width: 30px;
+}
+
+.ds h2{
+    text-align: center;
+}
+
+.contact p{
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+}
+
+.contact p img{
+    padding-right: 9px;
+}
+
+main{
+    display: flex;
+    justify-content:space-between ;
+    padding: 9px;
+}
+
+.eduContainer img{
+    width: auto;
+    height: 20px;
+}
+
+.passionContainer img{
+    width: auto;
+    height: 30px;
+}
+
+.calendar{
+    display: flex;
+    align-items: center;
+    margin:  9px 0;
+}
+
+.calendar img {
+    padding-right: 9px;
+    height: 25px;
+    width: auto;
+}
+
+.gauche, .droite{
+    padding: 0 9px;
+}
+
+.passionContainer, .eduContainer{
+    padding: 9px 0;
+}
+
+.passionContainer p:nth-child(2), .eduContainer p:nth-child(3){
+    padding-top: 9px;
+}
+
+/* progress Bar */
+progress[value] {
+	appearance: none;
+	border: none;
+	width: 100%; height: 20px;
+	  background-color: whiteSmoke;
+	  border-radius: 3px;
+	  box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+	color: royalblue;
+	position: relative;
+	margin: 0 0 1.5em; 
+}
+
+progress[value]::-webkit-progress-bar {
+	background-color: whiteSmoke;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+}
+
+progress[value]::-webkit-progress-value {
+	position: relative;
+	background-size: 35px 20px, 100% 100%, 100% 100%;
+	border-radius:3px;
+}
+
+progress[value]::-webkit-progress-value:after {
+	content: '';
+	position: absolute;
+	width:5px; height:5px;
+	top:7px; right:7px;
+	background-color: white;
+	border-radius: 100%;
+}
+
+progress[value]::-moz-progress-bar {
+	background-image:
+	-moz-linear-gradient( 135deg,
+    transparent,
+    transparent 33%,
+        rgba(0,0,0,.1) 33%,
+        rgba(0,0,0,.1) 66%,
+    transparent 66%),
+    -moz-linear-gradient( top,
+        rgba(255, 255, 255, .25),
+        rgba(0,0,0,.2)),
+     -moz-linear-gradient( left, #09c, #f44);
+	background-size: 35px 20px, 100% 100%, 100% 100%;
+	border-radius:3px;
+}
+
+
+.html5::-webkit-progress-value  {
+	/* Gradient background with Stripes */
+	background-image:
+	-webkit-linear-gradient( 135deg,
+        transparent,
+        transparent 33%,
+        rgba(0,0,0,.1) 33%,
+        rgba(0,0,0,.1) 66%,
+        transparent 66%),
+    -webkit-linear-gradient( top,
+    rgba(255, 255, 255, .25),
+    rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #09c, #f44);
+}
+
+
+
+@media (min-width: 426px){
+
+    .ds{
+        flex-direction: row;
+    }
+
+    .ds .freelance{
+        left: 75px;
+    }
+
+    .ds .contact{
+    flex-direction: row;
+    }
+
+}
