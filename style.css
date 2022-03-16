@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Roboto;
 }
 
 
@@ -102,7 +103,7 @@ li{
 }
 
 .contact p img{
-    padding-right: 9px;
+    padding: 0  9px;
 }
 
 main{
@@ -140,6 +141,11 @@ main{
 .passionContainer, .eduContainer{
     padding: 9px 0;
 }
+
+.passionContainer img{
+    padding-right: 9px;
+}
+
 
 .passionContainer p:nth-child(2), .eduContainer p:nth-child(3){
     padding-top: 9px;
